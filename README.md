@@ -1,6 +1,8 @@
 ## Hi there 👋
 <header>🔭 I'm a high school student currently working on creating a website that offers free resources to support and guide young females exploring technology and coding.
+ 
   <body>
+    
     Feel free to check out my progress using the link:[ https://www.instagram.com/code_herfuture/profilecard/?igsh=M2M4Z2p5dmhiZXL6](url)
   </body>
 <header> 🌱 I'm currently learning different coding languages, like Python and HTML/CSS.
