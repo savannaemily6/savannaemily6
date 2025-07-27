@@ -1,6 +1,7 @@
 ## Hi there 👋
 <header>🔭 I'm a high school student currently working on creating a website that offers free resources to support and guide young females exploring technology and coding.
-  <body>🌱 I'm currently learning different coding languages, like Python and HTML/CSS.
+  🌱 I'm currently learning different coding languages, like Python and HTML/CSS.
+  <body>
 
     📫 How to reach me: 
     Email: savannaemily6@gmail.com
