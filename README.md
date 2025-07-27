@@ -1,9 +1,11 @@
 ## Hi there 👋
-<header>🔭 I'm currently working on creating a website that offers free resources to support and guide yooung females in exploring technology and coding.
-I'm currently learning different coding languages, like Python and HTML/CSS.
+<header>🔭 I'm a high school student currently working on creating a website that offers free resources to support and guide young females in exploring technology and coding.
+
+  🌱 I'm currently learning different coding languages, like Python and HTML/CSS.
   
-How to reach me: 
-  Email: savannaemily6@gmail.com
+📫 How to reach me: 
+
+Email: savannaemily6@gmail.com
   
 </header>
 <!--
