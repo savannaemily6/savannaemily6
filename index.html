@@ -21,52 +21,107 @@
       border-radius: 12px;
       padding: 1.5rem 2rem;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      max-width: 100%;
+      animation: fadeIn 0.7s ease-in;
     }
 
-    h1, h2, p, li {
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      font-size: 1.3rem;
       margin-bottom: 0.75rem;
+      color: #5a7a8c;
+    }
+
+    .org-title {
+      font-weight: bold;
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
     }
 
     ul {
       padding-left: 1.5rem;
+      margin-top: 0;
+      margin-bottom: 1rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
     }
 
     a {
       color: #6f90a3;
       text-decoration: underline;
     }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>Hello, I'm Savanna Flores!</h1>
+    <h1>Hello, I'm Savanna Flores! 🩷✨</h1>
     <p>High schooler with a growing interest in computer engineering. Currently exploring new programming languages and tech concepts. ˚｡⋆୨୧˚ *:</p>
   </header>
 
   <section id="interests">
-    <h2>Currently working on creating a website that offers free resources to support and guide young females exploring technology and coding.</h2>
+    <h2>💻 Tech Project</h2>
+    <p class="org-title">Girls in Tech Resource Hub</p>
     <ul>
-      <li>Beginner-friendly tutorials.</li>
-      <li>Mentorship and tutoring opportunities.</li>
-      <li>Curating tools aimed at fostering inclusion, confidence, and technical skills.</li>
+      <li>📘 Beginner-friendly tutorials</li>
+      <li>🤝 Mentorship and tutoring opportunities</li>
+      <li>🌷 Tools to foster inclusion, confidence, and technical skills</li>
     </ul>
   </section>
 
-  <section id="Programs/Extracurriculars">
-    <h2>Past Programs/Extracurriculars</h2>
-    <p>- Participated in NYU's CS4CS - Computer Science for Cyber Security, a selective NYU program for aspiring tech students. During the program, I developed foundational skills in ethical hacking, data encryption, protocols, and key cybersecurity principles. I collaborated in team-based simulations and technical challenges to apply security knowledge in real-world scenarios. At the end of the program, I presented group research on vulnerabilities in public Wi-Fi networks, the growing risks associated with AI systems, and their potential implications for air traffic control.</p>
-    <p>- Participated in Stanford University's Neuroscience Journal Club, a program for high school students to explore neuroscience through weekly journal discussions and mentorship from Stanford researchers and faculty. I participated in peer-led discussions on research in cognitive sciences, presented insights on emerging topics such as brain-machine interfaces, and developed scientific literacy and interdisciplinary thinking through guided analysis of academic literature.</p>
-    <p>- Co-Founder/President of a HOSA (Future Health Professionals) chapter at my high school. It is a student-led organization that promotes career development in healthcare fields, through leadership, education, and competitive events. I led chapter meetings, coordinated event participation, and organized community service projects. I recruited and mentored 15+ students, fostering leadership development and professional growth.</p>
+  <section id="Programs">
+    <h2>📚 Past Programs & Extracurriculars</h2>
+
+    <p class="org-title">🔐 NYU CS4CS – Cybersecurity</p>
+    <ul>
+      <li>Developed skills in ethical hacking, data encryption, and network protocols</li>
+      <li>Completed team-based simulations and technical challenges</li>
+      <li>Presented research on public Wi-Fi vulnerabilities and AI risks</li>
+    </ul>
+
+    <p class="org-title">🧠 Stanford Neuroscience Journal Club</p>
+    <ul>
+      <li>Explored neuroscience topics in weekly journal discussions</li>
+      <li>Presented insights on brain-machine interfaces and cognitive science</li>
+      <li>Built interdisciplinary skills through academic research</li>
+    </ul>
+
+    <p class="org-title">🏥 HOSA – Future Health Professionals</p>
+    <ul>
+      <li>Co-founded and led school chapter with 15+ members</li>
+      <li>Organized community service and competitive events</li>
+      <li>Promoted leadership and career development in healthcare</li>
+    </ul>
   </section>
 
-  <section id="extracurricular">
-    <h2>Volunteering</h2>
-    <p>- Volunteered with American Red Cross, helped support blood drives and community events by assisting donors and coordinating events. Led outreach efforts as school chapter publicist, promoting donation campaigns and increasing participation.</p>
+  <section id="volunteering">
+    <h2>🫶 Volunteering</h2>
+
+    <p class="org-title">❤️ American Red Cross</p>
+    <ul>
+      <li>Assisted blood drives and supported donors</li>
+      <li>Coordinated events and led outreach as school publicist</li>
+      <li>Promoted donation campaigns and increased participation</li>
+    </ul>
   </section>
 
   <footer>
-    <p>Let’s connect! Find me on <a href="https://github.com/savannaemily6">GitHub</a>.</p>
+    <p>Let’s connect! 🖇️ Find me on <a href="https://github.com/savannaemily6">GitHub</a></p>
   </footer>
+
 </body>
 </html>
