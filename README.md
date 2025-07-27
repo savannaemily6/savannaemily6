@@ -1,4 +1,4 @@
-## Hi there 👋
+## Hello there! 👋
 <header>🔭 I'm a high school student currently working on creating a website that offers free resources to support and guide young females exploring technology and coding.
  
   <body>
@@ -14,6 +14,9 @@
     Phone: +1 949 687 8121
   
 </header>
+<footer>
+ Thank you for checking out my page! +*:ꔫ:*
+</footer>
 <!--
 **savannaemily6/savannaemily6** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
