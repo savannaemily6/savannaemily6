@@ -1,5 +1,10 @@
 ## Hi there 👋
-<header>"I'm currently working on learning new coding languages like HTML/CSS and Python.
+<header>🔭 I'm currently working on creating a website that offers free resources to support and guide yooung females in exploring technology and coding.
+I'm currently learning different coding languages, like Python and HTML/CSS.
+  
+How to reach me: 
+  Email: savannaemily6@gmail.com
+  
 </header>
 <!--
 **savannaemily6/savannaemily6** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
