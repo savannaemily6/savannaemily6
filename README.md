@@ -1,5 +1,6 @@
 ## Hi there 👋
-
+<header>"I'm currently working on learning new coding languages like HTML/CSS and Python.
+</header>
 <!--
 **savannaemily6/savannaemily6** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
