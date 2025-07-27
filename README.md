@@ -1,10 +1,10 @@
 ## Hi there 👋
 <header>🔭 I'm a high school student currently working on creating a website that offers free resources to support and guide young females exploring technology and coding.
-  <header>🌱 I'm currently learning different coding languages, like Python and HTML/CSS.
-  
-<header>📫 How to reach me: 
-<header>Email: savannaemily6@gmail.com
-<header>Phone: +1 949 687 8121
+  <body>🌱 I'm currently learning different coding languages, like Python and HTML/CSS.
+
+    📫 How to reach me: 
+    Email: savannaemily6@gmail.com
+    Phone: +1 949 687 8121
   
 </header>
 <!--
