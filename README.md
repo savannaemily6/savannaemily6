@@ -15,7 +15,12 @@
   
 </header>
 <footer>
- Thank you for checking out my page! +*:ꔫ:*
+ 
+<body> 
+ 
+    Thank you for checking out my page! +*:ꔫ:*
+</body>
+
 </footer>
 <!--
 **savannaemily6/savannaemily6** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
