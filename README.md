@@ -3,7 +3,7 @@
  
   <body>
     
-    Feel free to check out my progress using the link:
+    Feel free to check it out using the link:
     https://www.instagram.com/code_herfuture/profilecard/?igsh=M2M4Z2p5dmhiZXL6
   </body>
 <header> 🌱 I'm currently learning different coding languages, like Python and HTML/CSS.
