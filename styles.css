@@ -80,4 +80,11 @@ section {
     display: block;
 }
 
+/* Home Section Code */  
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
