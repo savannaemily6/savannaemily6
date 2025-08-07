@@ -73,11 +73,11 @@ section {
     color: var(--text-color);
 }
 
-.bx bx-menu{
-    font-size: 50rem;
+.bx-menu {
+    font-size: 50px;
     color: var(--bg-color);
     cursor: pointer;
-    display: none;
+    display: block;
 }
 
 
