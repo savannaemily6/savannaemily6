@@ -78,8 +78,8 @@ section {
     color: var(--bg-color);
     cursor: pointer;
     display: block;
-    width: 20rem;
-    height: 20rem;
+    width: 5rem;
+    height: 5rem;
 
     }
 }
