@@ -73,15 +73,11 @@ section {
     color: var(--text-color);
 }
 
-.menu-icon {
-    font-size: 5rem;
+.bx bx-menu{
+    font-size: 50rem;
     color: var(--bg-color);
     cursor: pointer;
-    display: block;
-    width: 5rem;
-    height: 5rem;
-
-    }
+    display: none;
 }
 
 
