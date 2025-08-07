@@ -73,34 +73,13 @@ section {
     color: var(--text-color);
 }
 
-#menu-icon {
+.menu-icon {
     font-size: 3rem;
     color: var(--bg-color);
     cursor: pointer;
     display: none;
 
-    /* Show icon on mobile */
-@media (max-width: 768px) {
-    #menu-icon {
-        display: block;
     }
-
-    .navbar {
-        display: none;
-        flex-direction: column;
-        background-color: var(--main-color);
-        position: absolute;
-        top: 100%;
-        right: 5%;
-        width: 200px;
-        padding: 1rem;
-    }
-
-    .navbar.active {
-        display: flex;
-    }
-}
-
 }
 
 
