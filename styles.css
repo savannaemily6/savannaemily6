@@ -74,10 +74,12 @@ section {
 }
 
 .menu-icon {
-    font-size: 3rem;
+    font-size: 5rem;
     color: var(--bg-color);
     cursor: pointer;
-    display: none;
+    display: block;
+    width: 5rem;
+    height: 5rem;
 
     }
 }
