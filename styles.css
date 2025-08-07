@@ -156,5 +156,11 @@ span {
     height: 42px;
     background: transparent;
     border: 0.2rem solid var(--main-color);
-    
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--main-color);
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 0.3 ease;
 }
+
+
