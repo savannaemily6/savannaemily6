@@ -1,5 +1,5 @@
 ## Hi there 👋
-
+## I'm currently working on learning new coding languages, developing new projects, and exploring different tech concepts.
 <!--
 **savannaemily6/savannaemily6** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
