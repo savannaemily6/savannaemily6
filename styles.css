@@ -198,3 +198,16 @@ span {
     background: var(--snd-bg-color);
 }
 
+.heading {
+    font-size: 6rem;
+    text-align: center;
+}
+
+.about-content {
+    padding: 0 4rem;
+}
+
+.about-content h2 {
+    text-align: center;
+    line-height: 1.2;
+}
