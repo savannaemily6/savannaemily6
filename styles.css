@@ -70,7 +70,9 @@ section {
 
 .navbar a:hover,
 .navbar a.active {
-    color: var(--text-color);
+    color: var(--bg-color); /* same as non-hovered */
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
 }
 
 .bx-menu {
