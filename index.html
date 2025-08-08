@@ -65,6 +65,14 @@
         loop: true
     });
 </script>
+<script>
+    const menuIcon = document.querySelector('.bx-menu');
+    const navbar = document.querySelector('.navbar');
+
+    menuIcon.addEventListener('click', () => {
+        navbar.classList.toggle('active');
+    });
+</script>
 </body>
 
 </html>

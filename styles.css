@@ -243,20 +243,140 @@ span {
 
 /* Responsive Design Code */
 
+/* Fix font size for medium screens */
 @media (max-width: 1200px) {
     html {
-        font-size: 55;
+        font-size: 55%; /* smaller base font */
     }
+}
 
+/* Adjust padding and layout for tablets */
 @media (max-width: 991px) {
     .header {
         padding: 2rem 3%;
     }
     section {
         padding: 10rem 3%;
-        
     }
-    
+}
+
+/* Mobile-specific styles (phones and small tablets) */
+@media (max-width: 768px) {
+
+    /* Base font size and body adjustments */
+    html {
+        font-size: 50%;
+    }
+
+    /* Header padding */
+    .header {
+        padding: 1.5rem 3%;
+    }
+
+    /* Navbar styles */
+    .navbar {
+        position: fixed;
+        top: 70px; /* below header */
+        left: 0;
+        width: 100%;
+        background: var(--main-color);
+        flex-direction: column;
+        display: none;
+        padding: 2rem 0;
+        z-index: 999;
+        border-top: 1px solid rgba(255,255,255,0.2);
+    }
+
+    /* Show navbar when active */
+    .navbar.active {
+        display: flex;
+    }
+
+    /* Navbar links */
+    .navbar a {
+        margin: 1.5rem 0;
+        font-size: 2rem;
+        text-align: center;
+        margin-left: 0; /* remove desktop margin */
+    }
+
+    /* Show menu icon */
+    .bx-menu {
+        display: block;
+        font-size: 3.6rem;
+        color: var(--bg-color);
+        cursor: pointer;
+    }
+
+    /* Home section layout: stack vertically */
+    .home {
+        flex-direction: column;
+        padding-top: 8rem; /* avoid header overlap */
+        text-align: center;
+    }
+
+    /* Profile image */
+    .home-img img {
+        width: 60vw;
+        margin: 0 auto 2rem auto;
+        border-width: 6px;
+        box-shadow: 0 0 20px var(--main-color);
+    }
+
+    /* Content next to image */
+    .home-content {
+        margin-left: 0;
+        padding: 0 1rem;
+    }
+
+    /* Headings font size */
+    .home-content h1 {
+        font-size: 4.5rem;
+    }
+
+    .home-content h3 {
+        font-size: 2.5rem;
+    }
+
+    /* Paragraph font size */
+    .home-content p {
+        font-size: 1.4rem;
+    }
+
+    /* Social media icons smaller */
+    .social-media a {
+        width: 36px;
+        height: 36px;
+        font-size: 1.6rem;
+        margin-right: 1rem;
+    }
+
+    /* Buttons smaller */
+    .btn {
+        font-size: 1.4rem;
+        padding: 0.8rem 2rem;
+    }
+}
+
+/* Hide menu icon on larger screens */
+@media (min-width: 769px) {
+    .bx-menu {
+        display: none;
+    }
+
+    .navbar {
+        display: flex !important; /* ensure nav is visible on desktop */
+        position: static;
+        flex-direction: row;
+        background: transparent;
+        padding: 0;
+        border-top: none;
+    }
+
+    .navbar a {
+        margin-left: 4rem;
+        font-size: 1.9rem;
+    }
 }
 
 
