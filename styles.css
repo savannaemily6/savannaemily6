@@ -92,7 +92,7 @@ section {
 .home-img img {
     width: 28vw;
     border-radius: 50%;
-    border: 3px solid var(--main-color);
+    border: 10px solid var(--main-color);
     box-shadow: 0 0 30px var(--main-color);
     cursor: pointer;
     animation: floatImage 4s ease-in-out infinite;
