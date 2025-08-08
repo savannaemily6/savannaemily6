@@ -211,3 +211,13 @@ span {
     text-align: center;
     line-height: 1.2;
 }
+
+.about-content h3 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.about-content p {
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+}
