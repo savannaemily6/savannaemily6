@@ -90,7 +90,7 @@ section {
 }
 
 .home-img img {
-    width: 25vw;
+    width: 27vw;
     border-radius: 50%;
     box-shadow: 0 0 25px var(--main-color);
     cursor: pointer;
