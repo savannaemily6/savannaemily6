@@ -61,18 +61,35 @@ section {
 }
 
 .navbar a {
+    position: relative;
     font-size: 1.9rem;
     color: var(--bg-color);
     margin-left: 4rem;
     font-weight: 700;
-    transition: 0.3s ease;
+    transition: color 0.3s ease;
 }
 
+/* Underline animation */
+.navbar a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: var(--bg-color);
+    left: 0;
+    bottom: -4px;
+    transition: width 0.3s ease;
+}
+
+/* On hover or active state */
 .navbar a:hover,
 .navbar a.active {
-    color: var(--bg-color); /* same as non-hovered */
-    text-decoration: underline;
-    text-underline-offset: 0.5rem;
+    color: #e6f0ee; /* softened version of var(--bg-color) */
+}
+
+.navbar a:hover::after,
+.navbar a.active::after {
+    width: 100%;
 }
 
 .bx-menu {
