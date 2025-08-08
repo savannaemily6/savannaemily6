@@ -237,6 +237,11 @@ span {
         padding: 10rem 3%;
         
     }
-
     
+}
+
+.multiple-text {
+    color: var(--main-color);
+    font-weight: bold;
+    white-space: nowrap;
 }
