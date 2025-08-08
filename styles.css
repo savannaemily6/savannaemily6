@@ -10,8 +10,8 @@
 }
 
 :root {
-    --bg-color: #a3adac;
-    --snd-bg-color: #a3adac;
+    --bg-color: #cddad8;
+    --snd-bg-color: rgb(235, 235, 235);
     --text-color: #000;
     --main-color: #365855;
 }
