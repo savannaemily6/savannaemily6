@@ -6,9 +6,7 @@
     border: none;
     outline: none;
     scroll-behavior: smooth;
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 100;
-    font-style: normal;
+    font-family: -apple-system, monospace;
 }
 
 :root {
