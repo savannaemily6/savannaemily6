@@ -2,201 +2,153 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Premier Baby Nurses</title>
-  <title>Certified Newborn Nurse Specialist</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Project Connect Business</title>
   <style>
-    
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Georgia, sans-serif;
-    }
+    /* RESET & BASE */
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif; }
+    body { background: #f5f5f5; color: #333; }
+    a { text-decoration: none; color: inherit; }
 
-    body {
-      background-color: #f7f7f7;
-      color: #333;
-      line-height: 1.6;
-    }
-
+    /* HEADER + TITLE ANIMATION */
     header {
-      background: #e0e0e0;
-      padding: 2rem;
+      background: #eaeaea;
+      padding: 2rem 1rem;
       text-align: center;
-      position: relative;
     }
-
     header h1 {
-      font-size: 3rem;
-      font-weight: bold;
-      display: inline-block;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
     }
-
     header h1 span {
       display: inline-block;
-      animation: bounce 2s infinite;
+      animation: bounce 1.8s infinite;
     }
-
-    /* Bouncing animation */
     @keyframes bounce {
-      0%, 100% {
-        transform: translateY(0);
-      }
-      50% {
-        transform: translateY(-12px);
-      }
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
     }
-
-    /* Delay each letter slightly */
-    header h1 span:nth-child(1) { animation-delay: 0s; }
-    header h1 span:nth-child(2) { animation-delay: 0.1s; }
-    header h1 span:nth-child(3) { animation-delay: 0.2s; }
-    header h1 span:nth-child(4) { animation-delay: 0.3s; }
-    header h1 span:nth-child(5) { animation-delay: 0.4s; }
-    header h1 span:nth-child(6) { animation-delay: 0.5s; }
-    header h1 span:nth-child(7) { animation-delay: 0.6s; }
-    header h1 span:nth-child(8) { animation-delay: 0.7s; }
+    header h1 span:nth-child(n) {
+      animation-delay: calc(0.1s * (var(--i) - 1));
+    }
 
     nav {
-      margin-top: 1rem;
-    }
-
-    nav a {
-      margin: 0 1rem;
-      text-decoration: none;
-      color: #333;
-      font-weight: bold;
-      transition: color 0.3s ease;
-    }
-
-    nav a:hover {
-      color: #555;
-    }
-
-    section {
-      padding: 4rem 10%;
-      text-align: center;
-    }
-
-    section h2 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-    }
-
-    .pricing {
       display: flex;
       justify-content: center;
-      gap: 2rem;
-      margin-top: 2rem;
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+    nav a:hover { color: #555; }
+
+    /* MAIN CONTENT */
+    main {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
     }
 
-    .price-card {
+    /* FEATURE CARDS (like project listings) */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
       background: #fff;
-      padding: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      flex: 1;
-      max-width: 300px;
-      transition: transform 0.3s ease;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      transition: transform 0.3s;
     }
+    .card:hover { transform: translateY(-6px); }
 
-    .price-card:hover {
-      transform: translateY(-8px);
+    /* PRICING SECTION */
+    .pricing { margin: 3rem 0; }
+    .pricing .cards .card {
+      text-align: center;
     }
-
-    .price-card h3 {
-      margin-bottom: 1rem;
-    }
-
-    .price-card p {
-      margin-bottom: 1rem;
-    }
-
-    .price-card button {
+    .pricing button {
+      margin-top: 1rem;
+      padding: 0.6rem 1.1rem;
       background: #333;
       color: #fff;
       border: none;
-      padding: 0.75rem 1.5rem;
-      border-radius: 8px;
+      border-radius: 6px;
       cursor: pointer;
-      transition: background 0.3s ease;
+      transition: background 0.3s;
     }
+    .pricing button:hover { background: #555; }
 
-    .price-card button:hover {
-      background: #555;
-    }
-
+    /* FOOTER */
     footer {
-      background: #e0e0e0;
       text-align: center;
-      padding: 1.5rem;
-      margin-top: 2rem;
+      padding: 1.5rem 1rem;
+      background: #eaeaea;
+    }
+
+    /* SECTION TITLES */
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      text-align: center;
     }
   </style>
 </head>
 <body>
+
   <header>
     <h1>
-      <span>B</span>
-      <span>u</span>
-      <span>s</span>
-      <span>i</span>
-      <span>n</span>
-      <span>e</span>
-      <span>s</span>
-      <span>s</span>
+      <!-- Use CSS variable for nth-child animation delays -->
+      <span style="--i:1;">P</span>
+      <span style="--i:2;">C</span>
+      <span style="--i:3;">F</span>
     </h1>
     <nav>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
       <a href="#pricing">Pricing</a>
+      <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <section id="about">
-    <h2>About Us</h2>
-    <p>We provide modern solutions for businesses looking to scale with simplicity and style. Our focus is efficiency, professionalism, and results-driven strategies.</p>
-  </section>
-
-  <section id="services">
-    <h2>Our Services</h2>
-    <p>From digital strategy to product design, we deliver tailored solutions to match your business needs.</p>
-  </section>
-
-  <section id="pricing">
-    <h2>Pricing</h2>
-    <div class="pricing">
-      <div class="price-card">
-        <h3>Basic</h3>
-        <p>$49 / month</p>
-        <p>Essential features for small teams.</p>
-        <button>Select</button>
+  <main>
+    <!-- Projects-style cards section -->
+    <section id="projects">
+      <h2>Featured Projects & Services</h2>
+      <div class="cards">
+        <div class="card"><h3>Project One</h3><p>Short description.</p></div>
+        <div class="card"><h3>Project Two</h3><p>Short description.</p></div>
+        <div class="card"><h3>Project Three</h3><p>Short description.</p></div>
       </div>
-      <div class="price-card">
-        <h3>Pro</h3>
-        <p>$99 / month</p>
-        <p>Advanced features for growing businesses.</p>
-        <button>Select</button>
-      </div>
-      <div class="price-card">
-        <h3>Enterprise</h3>
-        <p>$199 / month</p>
-        <p>Complete solution for large companies.</p>
-        <button>Select</button>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Have questions? Get in touch with us today.</p>
-    <p>Email: contact@business.com</p>
-  </section>
+    <!-- Pricing section -->
+    <section id="pricing" class="pricing">
+      <h2>Pricing Plans</h2>
+      <div class="cards">
+        <div class="card"><h3>Basic</h3><p>$49/month</p><button>Select</button></div>
+        <div class="card"><h3>Pro</h3><p>$99/month</p><button>Select</button></div>
+        <div class="card"><h3>Enterprise</h3><p>$199/month</p><button>Select</button></div>
+      </div>
+    </section>
+
+    <!-- About section -->
+    <section id="about">
+      <h2>About Us</h2>
+      <p style="text-align:center;">Empowering students and businesses to build meaningful connections and solutions.</p>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p style="text-align:center;">Reach us at <a href="mailto:contact@pcfexample.com">contact@pcfexample.com</a></p>
+    </section>
+  </main>
 
   <footer>
-    <p>&copy; 2025 Business. All rights reserved.</p>
+    <p>© 2025 PCF-Style Business</p>
   </footer>
+
 </body>
 </html>
+
