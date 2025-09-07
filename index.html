@@ -3,230 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Business Connect</title>
+  <title>Premier Baby Nurses</title>
   <style>
-    /* RESET & BASE */
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: "Helvetica Neue", Arial, sans-serif; }
-    body { background: #fafafa; color: #222; line-height: 1.6; }
-
-    a { text-decoration: none; color: inherit; }
-    h1, h2, h3 { font-weight: 600; }
-
-    /* NAVIGATION */
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem 8%;
-      background: #fff;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
-    nav .logo {
-      font-size: 1.4rem;
-      font-weight: 700;
-    }
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 2rem;
-    }
-    nav ul li a {
-      font-weight: 500;
-      color: #444;
-    }
-    nav ul li a:hover {
-      color: #000;
-    }
-
-    /* HERO SECTION */
-    .hero {
+    body {
+      font-family: Perpetua;
       text-align: center;
-      padding: 6rem 2rem;
-      background: #f4f4f4;
+      margin: 0;
+      padding: 50px;
     }
-    .hero h1 {
-      font-size: 2.8rem;
-      margin-bottom: 1rem;
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
     }
-    .hero p {
-      font-size: 1.1rem;
-      max-width: 700px;
-      margin: 0 auto 2rem;
+    p.subtitle {
+      font-size: 1.25rem;
       color: #555;
-    }
-    .hero .buttons {
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-    }
-    .hero .buttons a {
-      padding: 0.8rem 1.5rem;
-      border-radius: 6px;
-      font-weight: 500;
-      transition: all 0.3s;
-    }
-    .btn-primary {
-      background: #333;
-      color: #fff;
-    }
-    .btn-primary:hover { background: #555; }
-    .btn-secondary {
-      background: #eaeaea;
-      color: #333;
-    }
-    .btn-secondary:hover { background: #dcdcdc; }
-
-    /* FEATURE CARDS */
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1.5rem;
-      max-width: 1100px;
-      margin: 4rem auto;
-      padding: 0 2rem;
-    }
-    .card {
-      background: #fff;
-      padding: 2rem;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-      text-align: center;
-      transition: transform 0.3s;
-    }
-    .card:hover {
-      transform: translateY(-6px);
-    }
-    .card h3 {
-      margin-bottom: 1rem;
-    }
-    .card p {
-      color: #555;
-    }
-
-    /* PRICING */
-    .pricing {
-      background: #f4f4f4;
-      padding: 4rem 2rem;
-    }
-    .pricing h2 {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-    .pricing .cards .card {
-      padding: 2rem;
-    }
-    .pricing .card p.price {
-      font-size: 1.4rem;
-      font-weight: bold;
-      margin: 1rem 0;
-    }
-    .pricing button {
-      padding: 0.7rem 1.2rem;
-      border: none;
-      border-radius: 6px;
-      background: #333;
-      color: #fff;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-    .pricing button:hover { background: #555; }
-
-    /* FOOTER */
-    footer {
-      background: #fff;
-      padding: 2rem;
-      text-align: center;
-      color: #555;
-      font-size: 0.9rem;
-      border-top: 1px solid #eee;
+      margin-top: 0;
     }
   </style>
 </head>
 <body>
-
-  <!-- NAVIGATION -->
-  <nav>
-    <div class="logo">Business Connect</div>
-    <ul>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#pricing">Pricing</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
-  <!-- HERO -->
-  <section class="hero">
-    <h1>Connecting People, Projects, and Possibilities</h1>
-    <p>Your hub for discovering opportunities, sharing ideas, and building meaningful connections that help you grow.</p>
-    <div class="buttons">
-      <a href="#projects" class="btn-primary">Explore Projects</a>
-      <a href="#about" class="btn-secondary">Learn More</a>
-    </div>
-  </section>
-
-  <!-- FEATURE CARDS -->
-  <section id="projects">
-    <div class="cards">
-      <div class="card">
-        <h3>Project One</h3>
-        <p>A great opportunity to collaborate with innovative teams.</p>
-      </div>
-      <div class="card">
-        <h3>Project Two</h3>
-        <p>Grow your skills and experience with real-world challenges.</p>
-      </div>
-      <div class="card">
-        <h3>Project Three</h3>
-        <p>Join a network of ambitious professionals and leaders.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- PRICING -->
-  <section id="pricing" class="pricing">
-    <h2>Pricing Plans</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Basic</h3>
-        <p class="price">$49 / month</p>
-        <p>Perfect for individuals just getting started.</p>
-        <button>Select</button>
-      </div>
-      <div class="card">
-        <h3>Pro</h3>
-        <p class="price">$99 / month</p>
-        <p>Advanced tools for growing businesses and teams.</p>
-        <button>Select</button>
-      </div>
-      <div class="card">
-        <h3>Enterprise</h3>
-        <p class="price">$199 / month</p>
-        <p>Full suite of solutions for large organizations.</p>
-        <button>Select</button>
-      </div>
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about" style="max-width: 800px; margin: 4rem auto; padding: 0 2rem; text-align:center;">
-    <h2>About Us</h2>
-    <p>We believe in empowering businesses and individuals by fostering connections through projects that matter. Our platform helps you discover, collaborate, and succeed.</p>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" style="max-width: 800px; margin: 4rem auto; padding: 0 2rem; text-align:center;">
-    <h2>Contact</h2>
-    <p>Email us at <a href="mailto:contact@businessconnect.com">contact@businessconnect.com</a></p>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2025 Business Connect. All rights reserved.</p>
-  </footer>
-
+  <h1>Premier Baby Nurses</h1>
+  <p> class="subtitle">Certified Newborn Nurse Specialists</p>
 </body>
-</html>
+</html/>
