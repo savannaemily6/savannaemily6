@@ -3,77 +3,132 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Project Connect Business</title>
+  <title>Business Connect</title>
   <style>
     /* RESET & BASE */
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif; }
-    body { background: #f5f5f5; color: #333; }
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: "Helvetica Neue", Arial, sans-serif; }
+    body { background: #fafafa; color: #222; line-height: 1.6; }
+
     a { text-decoration: none; color: inherit; }
+    h1, h2, h3 { font-weight: 600; }
 
-    /* HEADER + TITLE ANIMATION */
-    header {
-      background: #eaeaea;
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
-    header h1 span {
-      display: inline-block;
-      animation: bounce 1.8s infinite;
-    }
-    @keyframes bounce {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-10px); }
-    }
-    header h1 span:nth-child(n) {
-      animation-delay: calc(0.1s * (var(--i) - 1));
-    }
-
+    /* NAVIGATION */
     nav {
       display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 8%;
+      background: #fff;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav .logo {
+      font-size: 1.4rem;
+      font-weight: 700;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+    nav ul li a {
+      font-weight: 500;
+      color: #444;
+    }
+    nav ul li a:hover {
+      color: #000;
+    }
+
+    /* HERO SECTION */
+    .hero {
+      text-align: center;
+      padding: 6rem 2rem;
+      background: #f4f4f4;
+    }
+    .hero h1 {
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 0 auto 2rem;
+      color: #555;
+    }
+    .hero .buttons {
+      display: flex;
       justify-content: center;
-      gap: 1.5rem;
-      margin-top: 1rem;
+      gap: 1rem;
     }
-    nav a:hover { color: #555; }
-
-    /* MAIN CONTENT */
-    main {
-      max-width: 1000px;
-      margin: 2rem auto;
-      padding: 0 1rem;
+    .hero .buttons a {
+      padding: 0.8rem 1.5rem;
+      border-radius: 6px;
+      font-weight: 500;
+      transition: all 0.3s;
     }
+    .btn-primary {
+      background: #333;
+      color: #fff;
+    }
+    .btn-primary:hover { background: #555; }
+    .btn-secondary {
+      background: #eaeaea;
+      color: #333;
+    }
+    .btn-secondary:hover { background: #dcdcdc; }
 
-    /* FEATURE CARDS (like project listings) */
+    /* FEATURE CARDS */
     .cards {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 1.5rem;
+      max-width: 1100px;
+      margin: 4rem auto;
+      padding: 0 2rem;
     }
     .card {
       background: #fff;
-      padding: 1.5rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      text-align: center;
       transition: transform 0.3s;
     }
-    .card:hover { transform: translateY(-6px); }
+    .card:hover {
+      transform: translateY(-6px);
+    }
+    .card h3 {
+      margin-bottom: 1rem;
+    }
+    .card p {
+      color: #555;
+    }
 
-    /* PRICING SECTION */
-    .pricing { margin: 3rem 0; }
-    .pricing .cards .card {
+    /* PRICING */
+    .pricing {
+      background: #f4f4f4;
+      padding: 4rem 2rem;
+    }
+    .pricing h2 {
       text-align: center;
+      margin-bottom: 2rem;
+    }
+    .pricing .cards .card {
+      padding: 2rem;
+    }
+    .pricing .card p.price {
+      font-size: 1.4rem;
+      font-weight: bold;
+      margin: 1rem 0;
     }
     .pricing button {
-      margin-top: 1rem;
-      padding: 0.6rem 1.1rem;
-      background: #333;
-      color: #fff;
+      padding: 0.7rem 1.2rem;
       border: none;
       border-radius: 6px;
+      background: #333;
+      color: #fff;
       cursor: pointer;
       transition: background 0.3s;
     }
@@ -81,74 +136,97 @@
 
     /* FOOTER */
     footer {
+      background: #fff;
+      padding: 2rem;
       text-align: center;
-      padding: 1.5rem 1rem;
-      background: #eaeaea;
-    }
-
-    /* SECTION TITLES */
-    h2 {
-      font-size: 1.8rem;
-      margin-bottom: 1rem;
-      text-align: center;
+      color: #555;
+      font-size: 0.9rem;
+      border-top: 1px solid #eee;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>
-      <!-- Use CSS variable for nth-child animation delays -->
-      <span style="--i:1;">P</span>
-      <span style="--i:2;">C</span>
-      <span style="--i:3;">F</span>
-    </h1>
-    <nav>
-      <a href="#projects">Projects</a>
-      <a href="#pricing">Pricing</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+  <!-- NAVIGATION -->
+  <nav>
+    <div class="logo">Business Connect</div>
+    <ul>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-  <main>
-    <!-- Projects-style cards section -->
-    <section id="projects">
-      <h2>Featured Projects & Services</h2>
-      <div class="cards">
-        <div class="card"><h3>Project One</h3><p>Short description.</p></div>
-        <div class="card"><h3>Project Two</h3><p>Short description.</p></div>
-        <div class="card"><h3>Project Three</h3><p>Short description.</p></div>
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Connecting People, Projects, and Possibilities</h1>
+    <p>Your hub for discovering opportunities, sharing ideas, and building meaningful connections that help you grow.</p>
+    <div class="buttons">
+      <a href="#projects" class="btn-primary">Explore Projects</a>
+      <a href="#about" class="btn-secondary">Learn More</a>
+    </div>
+  </section>
+
+  <!-- FEATURE CARDS -->
+  <section id="projects">
+    <div class="cards">
+      <div class="card">
+        <h3>Project One</h3>
+        <p>A great opportunity to collaborate with innovative teams.</p>
       </div>
-    </section>
-
-    <!-- Pricing section -->
-    <section id="pricing" class="pricing">
-      <h2>Pricing Plans</h2>
-      <div class="cards">
-        <div class="card"><h3>Basic</h3><p>$49/month</p><button>Select</button></div>
-        <div class="card"><h3>Pro</h3><p>$99/month</p><button>Select</button></div>
-        <div class="card"><h3>Enterprise</h3><p>$199/month</p><button>Select</button></div>
+      <div class="card">
+        <h3>Project Two</h3>
+        <p>Grow your skills and experience with real-world challenges.</p>
       </div>
-    </section>
+      <div class="card">
+        <h3>Project Three</h3>
+        <p>Join a network of ambitious professionals and leaders.</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- About section -->
-    <section id="about">
-      <h2>About Us</h2>
-      <p style="text-align:center;">Empowering students and businesses to build meaningful connections and solutions.</p>
-    </section>
+  <!-- PRICING -->
+  <section id="pricing" class="pricing">
+    <h2>Pricing Plans</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Basic</h3>
+        <p class="price">$49 / month</p>
+        <p>Perfect for individuals just getting started.</p>
+        <button>Select</button>
+      </div>
+      <div class="card">
+        <h3>Pro</h3>
+        <p class="price">$99 / month</p>
+        <p>Advanced tools for growing businesses and teams.</p>
+        <button>Select</button>
+      </div>
+      <div class="card">
+        <h3>Enterprise</h3>
+        <p class="price">$199 / month</p>
+        <p>Full suite of solutions for large organizations.</p>
+        <button>Select</button>
+      </div>
+    </div>
+  </section>
 
-    <!-- Contact -->
-    <section id="contact">
-      <h2>Contact</h2>
-      <p style="text-align:center;">Reach us at <a href="mailto:contact@pcfexample.com">contact@pcfexample.com</a></p>
-    </section>
-  </main>
+  <!-- ABOUT -->
+  <section id="about" style="max-width: 800px; margin: 4rem auto; padding: 0 2rem; text-align:center;">
+    <h2>About Us</h2>
+    <p>We believe in empowering businesses and individuals by fostering connections through projects that matter. Our platform helps you discover, collaborate, and succeed.</p>
+  </section>
 
+  <!-- CONTACT -->
+  <section id="contact" style="max-width: 800px; margin: 4rem auto; padding: 0 2rem; text-align:center;">
+    <h2>Contact</h2>
+    <p>Email us at <a href="mailto:contact@businessconnect.com">contact@businessconnect.com</a></p>
+  </section>
+
+  <!-- FOOTER -->
   <footer>
-    <p>© 2025 PCF-Style Business</p>
+    <p>© 2025 Business Connect. All rights reserved.</p>
   </footer>
 
 </body>
 </html>
-
