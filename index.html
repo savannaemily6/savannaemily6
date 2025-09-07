@@ -1,78 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <title>Savanna Flores - Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bounce Business</title>
+  <style>
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background-color: #f7f7f7;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #e0e0e0;
+      padding: 2rem;
+      text-align: center;
+      position: relative;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      display: inline-block;
+    }
+
+    header h1 span {
+      display: inline-block;
+      animation: bounce 2s infinite;
+    }
+
+    /* Bouncing animation */
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-12px);
+      }
+    }
+
+    /* Delay each letter slightly */
+    header h1 span:nth-child(1) { animation-delay: 0s; }
+    header h1 span:nth-child(2) { animation-delay: 0.1s; }
+    header h1 span:nth-child(3) { animation-delay: 0.2s; }
+    header h1 span:nth-child(4) { animation-delay: 0.3s; }
+    header h1 span:nth-child(5) { animation-delay: 0.4s; }
+    header h1 span:nth-child(6) { animation-delay: 0.5s; }
+    header h1 span:nth-child(7) { animation-delay: 0.6s; }
+    header h1 span:nth-child(8) { animation-delay: 0.7s; }
+
+    nav {
+      margin-top: 1rem;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #555;
+    }
+
+    section {
+      padding: 4rem 10%;
+      text-align: center;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .pricing {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .price-card {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      flex: 1;
+      max-width: 300px;
+      transition: transform 0.3s ease;
+    }
+
+    .price-card:hover {
+      transform: translateY(-8px);
+    }
+
+    .price-card h3 {
+      margin-bottom: 1rem;
+    }
+
+    .price-card p {
+      margin-bottom: 1rem;
+    }
+
+    .price-card button {
+      background: #333;
+      color: #fff;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .price-card button:hover {
+      background: #555;
+    }
+
+    footer {
+      background: #e0e0e0;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 2rem;
+    }
+  </style>
 </head>
-
 <body>
+  <header>
+    <h1>
+      <span>B</span>
+      <span>u</span>
+      <span>s</span>
+      <span>i</span>
+      <span>n</span>
+      <span>e</span>
+      <span>s</span>
+      <span>s</span>
+    </h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-    <!-- Header Section Code -->
-    <header class="header">
-        <a href="#home" class="logo">Savanna Flores</a>
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We provide modern solutions for businesses looking to scale with simplicity and style. Our focus is efficiency, professionalism, and results-driven strategies.</p>
+  </section>
 
-        <i class="bx bx-menu"></i>
-        <a href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" class="menu-icon"></a>
+  <section id="services">
+    <h2>Our Services</h2>
+    <p>From digital strategy to product design, we deliver tailored solutions to match your business needs.</p>
+  </section>
 
-        <nav class="navbar">
-            <a href="#home">Home</a>
-            <a href="#projects">Projects</a>
-            <a href="#resume">Resume</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+  <section id="pricing">
+    <h2>Pricing</h2>
+    <div class="pricing">
+      <div class="price-card">
+        <h3>Basic</h3>
+        <p>$49 / month</p>
+        <p>Essential features for small teams.</p>
+        <button>Select</button>
+      </div>
+      <div class="price-card">
+        <h3>Pro</h3>
+        <p>$99 / month</p>
+        <p>Advanced features for growing businesses.</p>
+        <button>Select</button>
+      </div>
+      <div class="price-card">
+        <h3>Enterprise</h3>
+        <p>$199 / month</p>
+        <p>Complete solution for large companies.</p>
+        <button>Select</button>
+      </div>
+    </div>
+  </section>
 
-    <!-- Header Section Code -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Have questions? Get in touch with us today.</p>
+    <p>Email: contact@business.com</p>
+  </section>
 
-    <section class="home" id="home">
-        <div class="home-img">
-            <img src="c:\Users\savan\Pictures\Screenshots\Screenshot 2025-08-07 202907.png" alt="Profile Image">
-        </div>
-        <div class="home-content">
-            <h3>Hello,</h3>
-            <h1>I'm Savanna Flores</h1>
-            <h3>And I'm a(n) <span class="multiple-text">High School Student</span></h3>
-            <p>Hi, I'm an incoming high school junior with a growing interest in computer engineering, technology,
-                and design. I've taken AP Computer Science Principles, where I learned the fundamentals of programming
-                and technology concepts. I'm also a volunteer tutor, helping other students understand
-                coding and problem-solving, which allows me to reinforce my own skills while supporting others.
-
-                I'm familiar with JavaScript, HTML, and CSS, and I enjoy building creative web projects that challenge
-                me to think critically and learn new things. Teaching, coding, and hands-on experience have all deepened
-                my passion for tech. I'm excited to continue learning, exploring, and growing as I take on new
-                opportunities in computer engineering and beyond.</p>
-
-            <div class="social-media">
-                <a href="https://github.com/savannaemily6"><i class='bx bxl-github'></i></a>
-                <a href="https://www.linkedin.com/in/savanna-flores-38bb80376/"><i class='bx bxl-linkedin'></i></a>
-                <a href="savannaemily6@gmail.com"><i class='bx bxl-gmail'></i></a>
-
-            </div>
-            <a href="c:\Users\savan\Downloads\savannaflores_portfolioresume.pdf" download class="btn">Download Resume</a>
-        </div>
-    </section>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script>
-    const typed = new Typed('.multiple-text', {
-        strings: ['High School Student', 'Aspiring Engineer','High School Student', 'Aspiring Engineer','High School Student', 'Aspiring Engineer','High School Student', 'Aspiring Engineer','High School Student', 'Aspiring Engineer','High School Student', 'Aspiring Engineer','High School Student', 'Aspiring Engineer','High School Student', 'Aspiring Engineer','High School Student', 'Aspiring Engineer','High School Student', 'Aspiring Engineer','High School Student', 'Aspiring Engineer','High School Student', 'Aspiring Engineer','High School Student', 'Aspiring Engineer','High School Student', 'Aspiring Engineer'],
-        typeSpeed: 100,
-        backSpeed: 60,
-        backDelay: 1500,
-        loop: true
-    });
-</script>
-<script>
-    const menuIcon = document.querySelector('.bx-menu');
-    const navbar = document.querySelector('.navbar');
-
-    menuIcon.addEventListener('click', () => {
-        navbar.classList.toggle('active');
-    });
-</script>
+  <footer>
+    <p>&copy; 2025 Business. All rights reserved.</p>
+  </footer>
 </body>
-
 </html>
